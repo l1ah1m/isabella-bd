@@ -18,9 +18,21 @@ $('#play').click(function () {
     $('.balloon-border').animate({
         top: -500
     }, 8000);
-    var audio = $('.song')[0];
-    audio.play();
-
+    
+    // Play rap.mp3 first
+    var rapAudio = document.getElementById('rapAudio');
+    var storyAudio = document.getElementById('storyAudio');
+    
+    // When rap.mp3 finishes, start story.mp3 and begin moving text
+    rapAudio.addEventListener('ended', function() {
+        // Start the moving story animation
+        $('.moving-story').removeClass('paused');
+        // Play story.mp3
+        storyAudio.play();
+    }, { once: true });
+    
+    // Play rap.mp3
+    rapAudio.play();
 });
 var typed = new Typed("#typed", {
     stringsElement: '#typed-strings',

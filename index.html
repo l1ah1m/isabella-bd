@@ -16,28 +16,30 @@
             </div>
         </div>
     </div>
-    <audio class="song" controls loop>
-        <source src="music.mp3">
-        </source>
+    <audio id="rapAudio" class="song">
+        <source src="rap.mp3">
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <audio id="storyAudio" class="song">
+        <source src="story.mp3">
         Your browser isn't invited for super fun audio time.
     </audio>
     <canvas id="confetti"></canvas>
     <div class="main">
         <div class="container pt-5">
             <div class="row">
-
                 <div class="col-12 col-xl-6 mx-auto">
                     <img src="img/banner.png" alt="">
                 </div>
 
                 <div class="col-12  text-center">
-                    <div id="name" class="area">Gaurav</div>
+                    <div id="name" class="area">Isabella</div>
                 </div>
 
                 <div class="col-12 text-center">
                     <div class="type-wrap">
                         <div id="typed-strings" class="typing">
-                            <h2>Happy Birthday <i id="nae">Gaurav</i></h2>
+                            <h2>Happy Birthday <i id="nae">Isabella</i></h2>
                             <h2>Have a wonderful day</h2>
                             <h2>Filled with joy and happiness.</h2>
                         </div>
@@ -45,8 +47,30 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-xl-3 cake">
-                    <img src="img/cake.gif" alt="">
+                <!-- Birthday Wish Section with Photo, Cake, and Story aligned on same line -->
+                <div class="col-12 birthday-wish-section">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-12 col-md-3 photo-container">
+                            <img src="img/IMG_1499.jpg" alt="Birthday Photo" class="birthday-photo">
+                        </div>
+                        <div class="col-12 col-md-3 cake-container">
+                            <img src="img/cake.gif" alt="" class="center-cake">
+                        </div>
+                        <div class="col-12 col-md-6 story-container">
+                            <div class="moving-story paused">
+                                <div class="story-content">
+                                    <p class="story-text">Once upon a time, on a special day like today, a wonderful person was born. This person brought joy, laughter, and happiness to everyone around them. Through the years, they've grown into an amazing individual who lights up every room they enter.</p>
+                                    <p class="story-text">Today, we celebrate not just another year, but all the beautiful memories created, the challenges overcome, and the dreams yet to be fulfilled. May this new chapter bring even more adventures, success, and moments of pure happiness.</p>
+                                    <p class="story-text">As you blow out the candles and make your wishes, know that you are loved, cherished, and appreciated more than words can express. Here's to another year of amazing experiences and wonderful memories!</p>
+                                </div>
+                                <div class="story-content">
+                                    <p class="story-text">Once upon a time, on a special day like today, a wonderful person was born. This person brought joy, laughter, and happiness to everyone around them. Through the years, they've grown into an amazing individual who lights up every room they enter.</p>
+                                    <p class="story-text">Today, we celebrate not just another year, but all the beautiful memories created, the challenges overcome, and the dreams yet to be fulfilled. May this new chapter bring even more adventures, success, and moments of pure happiness.</p>
+                                    <p class="story-text">As you blow out the candles and make your wishes, know that you are loved, cherished, and appreciated more than words can express. Here's to another year of amazing experiences and wonderful memories!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
