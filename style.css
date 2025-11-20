@@ -165,7 +165,7 @@ img {
 
 .moving-story {
     position: relative;
-    animation: scrollStory 30s linear infinite;
+    animation: scrollStory 39s linear infinite;
     top: 0;
 }
 
