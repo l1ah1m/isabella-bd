@@ -19,7 +19,7 @@ $('#play').click(function () {
         top: -500
     }, 8000);
     
-    // Play rap.mp3 first
+    // Play rap.mp3 first with 3 second delay
     var rapAudio = document.getElementById('rapAudio');
     var storyAudio = document.getElementById('storyAudio');
     
@@ -31,8 +31,10 @@ $('#play').click(function () {
         storyAudio.play();
     }, { once: true });
     
-    // Play rap.mp3
-    rapAudio.play();
+    // Play rap.mp3 after 3 second delay
+    setTimeout(function() {
+        rapAudio.play();
+    }, 3000);
 });
 var typed = new Typed("#typed", {
     stringsElement: '#typed-strings',

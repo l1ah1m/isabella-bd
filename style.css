@@ -161,17 +161,18 @@ img {
     height: 500px;
     overflow: hidden;
     position: relative;
-    display: flex;
-    align-items: center;
 }
 
 .moving-story {
     position: relative;
     animation: scrollStory 30s linear infinite;
+    top: 0;
 }
 
 .moving-story.paused {
     animation-play-state: paused;
+    top: 0;
+    transform: translateY(0) !important;
 }
 
 .story-content {
